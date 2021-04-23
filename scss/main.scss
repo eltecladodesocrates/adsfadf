@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'functions';
 
 * {
     margin: 0;
@@ -14,8 +15,8 @@ body {
 
 // Nested elements
 header {
-    background-color: $dark-color;
-    color: $light-color;
+    background-color: $light-color;
+    color: set-text-color($light-color);
     padding: 1rem;
 
     h1 {
